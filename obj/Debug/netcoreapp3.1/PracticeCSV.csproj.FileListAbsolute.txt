@@ -1,0 +1,15 @@
+C:\Users\karan\source\repos\PracticeCSV\bin\Debug\netcoreapp3.1\PracticeCSV.exe
+C:\Users\karan\source\repos\PracticeCSV\bin\Debug\netcoreapp3.1\PracticeCSV.deps.json
+C:\Users\karan\source\repos\PracticeCSV\bin\Debug\netcoreapp3.1\PracticeCSV.runtimeconfig.json
+C:\Users\karan\source\repos\PracticeCSV\bin\Debug\netcoreapp3.1\PracticeCSV.runtimeconfig.dev.json
+C:\Users\karan\source\repos\PracticeCSV\bin\Debug\netcoreapp3.1\PracticeCSV.dll
+C:\Users\karan\source\repos\PracticeCSV\bin\Debug\netcoreapp3.1\PracticeCSV.pdb
+C:\Users\karan\source\repos\PracticeCSV\bin\Debug\netcoreapp3.1\CsvHelper.dll
+C:\Users\karan\source\repos\PracticeCSV\obj\Debug\netcoreapp3.1\PracticeCSV.csproj.AssemblyReference.cache
+C:\Users\karan\source\repos\PracticeCSV\obj\Debug\netcoreapp3.1\PracticeCSV.AssemblyInfoInputs.cache
+C:\Users\karan\source\repos\PracticeCSV\obj\Debug\netcoreapp3.1\PracticeCSV.AssemblyInfo.cs
+C:\Users\karan\source\repos\PracticeCSV\obj\Debug\netcoreapp3.1\PracticeCSV.csproj.CoreCompileInputs.cache
+C:\Users\karan\source\repos\PracticeCSV\obj\Debug\netcoreapp3.1\PracticeCSV.csproj.CopyComplete
+C:\Users\karan\source\repos\PracticeCSV\obj\Debug\netcoreapp3.1\PracticeCSV.dll
+C:\Users\karan\source\repos\PracticeCSV\obj\Debug\netcoreapp3.1\PracticeCSV.pdb
+C:\Users\karan\source\repos\PracticeCSV\obj\Debug\netcoreapp3.1\PracticeCSV.genruntimeconfig.cache

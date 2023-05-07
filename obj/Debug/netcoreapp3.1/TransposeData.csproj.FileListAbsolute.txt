@@ -1,0 +1,14 @@
+C:\Users\karan\source\repos\PracticeCSV\bin\Debug\netcoreapp3.1\TransposeData.exe
+C:\Users\karan\source\repos\PracticeCSV\bin\Debug\netcoreapp3.1\TransposeData.deps.json
+C:\Users\karan\source\repos\PracticeCSV\bin\Debug\netcoreapp3.1\TransposeData.runtimeconfig.json
+C:\Users\karan\source\repos\PracticeCSV\bin\Debug\netcoreapp3.1\TransposeData.runtimeconfig.dev.json
+C:\Users\karan\source\repos\PracticeCSV\bin\Debug\netcoreapp3.1\TransposeData.dll
+C:\Users\karan\source\repos\PracticeCSV\bin\Debug\netcoreapp3.1\TransposeData.pdb
+C:\Users\karan\source\repos\PracticeCSV\bin\Debug\netcoreapp3.1\CsvHelper.dll
+C:\Users\karan\source\repos\PracticeCSV\obj\Debug\netcoreapp3.1\TransposeData.AssemblyInfoInputs.cache
+C:\Users\karan\source\repos\PracticeCSV\obj\Debug\netcoreapp3.1\TransposeData.AssemblyInfo.cs
+C:\Users\karan\source\repos\PracticeCSV\obj\Debug\netcoreapp3.1\TransposeData.csproj.CoreCompileInputs.cache
+C:\Users\karan\source\repos\PracticeCSV\obj\Debug\netcoreapp3.1\TransposeData.csproj.CopyComplete
+C:\Users\karan\source\repos\PracticeCSV\obj\Debug\netcoreapp3.1\TransposeData.dll
+C:\Users\karan\source\repos\PracticeCSV\obj\Debug\netcoreapp3.1\TransposeData.pdb
+C:\Users\karan\source\repos\PracticeCSV\obj\Debug\netcoreapp3.1\TransposeData.genruntimeconfig.cache
