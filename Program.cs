@@ -1,110 +1,46 @@
 ﻿using System;
-using System.Collections;
 using System.IO;
 
 namespace TransposeData
 {
     class Program
     {
-        static readonly string filepath = "C:\\Users\\karan\\source\\repos\\PracticeCSV\\Files\\";
-        static readonly string filename = "ProgrammingTaskInput";
+        static readonly string filepath = System.IO.Directory.GetCurrentDirectory().Split("bin")[0]+"Files";
         static int row = 0;
-        static int col = 0;
-        static int counter = 0;
-        static ArrayList listValues = new ArrayList();
+        static int column = 0;
         static string[,] array2D;
-        static ArrayList dictionary = new ArrayList();
 
         public static void TransposeCSV(string filename)
         {
-            ReadData(filename); //read data frm file
-            StoreData();        //store data into list
-            WriteData();        //write transposed data into new file
-        }
-
-        public static void ReadData(string filename)
-        {
             try
             {
-                using (var reader = new StreamReader(filepath + filename + ".csv"))
+                string[] lines = File.ReadAllLines(filepath + "\\" +filename +".csv");  //read data
+                row = lines.Length;
+                column = lines[0].Split(";").Length;
+                array2D = new string[column, row];  //transposed array
+                for (int i = 0; i < row; i++)
                 {
-                    while (reader.EndOfStream == false)
+                    string[] it = lines[i].Split(";");
+                    for (int j = 0; j < column; j++)
                     {
-                        var line = reader.ReadLine();
-                        row += 1;
-                        string[] items = line.Split(";");
-                        foreach (var v in items)
-                        {
-                            counter += 1;
-                            listValues.Add(v);
-                        }
-                        col = counter;
-                        counter = 0;
+                        array2D[j, i] = it[j];  //storing data in transposed array
                     }
                 }
-                //read listValues data
-                Console.WriteLine("List:\n");
-                foreach (var v in listValues)
-                    Console.WriteLine(v);
             }
             catch (Exception e)
             {
                 Console.WriteLine(e.Message);
             }
+
+            WriteData(filename);        //write transposed data into new file
         }
-
-        public static void StoreData()
-        {
-            //Console.WriteLine("Row: "+col+"\nColumn: "+row);
-            array2D = new string[col, row];
-            for (int i = 0; i < col; i++)
-            {
-                string al = null;
-                for (int j = 0; j < row; j++)
-                {
-                    for (int k = 0; k < listValues.Count; k++)
-                    {
-                        string t1 = ((string)listValues[k]).Substring(0, 1);
-                        string temp = (string)listValues[k];
-
-                        if (dictionary.Contains(temp))
-                            continue;
-                        else if (j == 0)
-                        {
-                            al = t1;
-                            array2D[i, j] = temp;
-                            dictionary.Add(temp);
-                            break;
-                        }
-                        else if (j != 0 && al.Equals(t1))
-                        {
-                            array2D[i, j] = temp;
-                            dictionary.Add(temp);
-                            break;
-                        }
-                    }
-                }
-            }
-
-            //reading stored  data
-            Console.WriteLine("Stored Data: \n");
-            for (int i = 0; i < array2D.GetLength(0); i++)
-            {
-                for (int j = 0; j < array2D.GetLength(1); j++)
-                {
-                    Console.WriteLine(array2D[i,j]);
-                }
-                Console.WriteLine();
-            }
-        }
-
-        public static void WriteData()
+        public static void WriteData(string filename)
         {
             try
             {
-                using (StreamWriter writer = new StreamWriter(filepath + filename + "_transposed.csv"))
+                using (StreamWriter writer = new StreamWriter(filepath + "\\" + filename + "_transposed.csv"))
                 {
-                    for (int i = 0; i < col; i++)
+                    for (int i = 0; i < column; i++)
                     {
                         for (int j = 0; j < row; j++)
                         {
@@ -124,7 +60,10 @@ namespace TransposeData
 
         static void Main(string[] args)
         {
-            TransposeCSV(filename);
+            string file1 = "ProgrammingTaskInput";      //Assignment data
+            string file2 = "ProgrammingTaskInput 2";    //Data with only 1 row and multiple columns
+            string file3 = "ProgrammingTaskInput 3";    //Missing Data
+            TransposeCSV(file1);
         }
     }
 }
